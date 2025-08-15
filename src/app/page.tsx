@@ -15,9 +15,10 @@ export default function Home() {
         <div className="mt-6">
           <a
             href="#contact"
-            className="inline-flex items-center rounded-full bg-foreground text-background px-5 py-2 text-sm font-medium hover:opacity-90"
+            aria-label="Contact Me"
+            className="inline-flex items-center rounded-full bg-foreground text-background px-5 py-2 text-sm font-semibold hover:opacity-90"
           >
-            Let’s Build Something Together
+            Contact Me
           </a>
         </div>
       </section>
@@ -27,15 +28,12 @@ export default function Home() {
         <h2 className="text-2xl font-semibold tracking-tight">About Me</h2>
         <div className="mt-4 space-y-4 text-black/80 dark:text-white/80">
           <p>
-            As an emerging AI developer, I bring fresh perspectives and cutting-edge knowledge to the rapidly
-            evolving field of artificial intelligence. My journey began with a fascination for how AI can enhance
-            human capabilities, leading me to specialize in prompt engineering and AI application development. I’m
-            particularly excited about creating intuitive AI solutions that solve real-world problems.
+            Entry‑level AI developer focused on LLMs and human‑centered AI. Built an AI content assistant that cut
+            creation time by 60% and processed 1,000+ requests during beta.
           </p>
           <p>
-            What sets me apart is my commitment to responsible AI development and my ability to translate complex
-            technical concepts into user-friendly applications. I’m currently seeking opportunities to contribute to
-            innovative AI projects while growing alongside experienced professionals in a collaborative environment.
+            Tech I use: Python, Next.js (App Router), TypeScript, Tailwind, OpenAI APIs, Supabase (Postgres + RLS).
+            I enjoy turning prompts into usable products with clear docs and measurable outcomes.
           </p>
         </div>
       </section>
@@ -47,15 +45,14 @@ export default function Home() {
           <div>
             <h3 className="text-lg font-medium">Hard Skills</h3>
             <ul className="mt-3 space-y-2 list-disc list-inside text-black/80 dark:text-white/80">
-              <li>Prompt Engineering</li>
-              <li>LLM Integration</li>
-              <li>AI Application Development</li>
-              <li>Basic ML Model Implementation</li>
-              <li>Python</li>
-              <li>API Integration</li>
-              <li>Version Control (Git)</li>
-              <li>Basic Web Development</li>
-              <li>OpenAI API, LangChain, Jupyter</li>
+              <li>Prompt Engineering — shipped reusable prompt templates for a content assistant</li>
+              <li>LLM Integration — wired OpenAI API with typed request/response guards</li>
+              <li>AI Application Development — built Next.js app with server + client components</li>
+              <li>Basic ML — simple scoring heuristics and evaluation loops</li>
+              <li>Python — backend scripts, data prep, evaluation</li>
+              <li>API Integration — REST endpoints and fetch clients with error handling</li>
+              <li>Git/GitHub — conventional commits, feature branches, PRs</li>
+              <li>OpenAI, LangChain, Jupyter — prototyping and iteration</li>
             </ul>
           </div>
           <div>
@@ -82,6 +79,9 @@ export default function Home() {
                 <h3 className="text-xl font-semibold">AI-Powered Content Assistant</h3>
                 <p className="text-sm text-black/60 dark:text-white/60">Role: Solo Developer · Duration: 6 weeks</p>
               </div>
+            </div>
+            <div className="mt-4">
+              <img src="/projects/content-assistant.svg" alt="Screenshot placeholder of the AI Content Assistant UI" className="w-full max-w-3xl rounded-md border border-black/5 dark:border-white/10" />
             </div>
             <p className="mt-4 text-black/80 dark:text-white/80">
               A smart content generation and optimization tool that helps content creators streamline their workflow.
@@ -113,6 +113,10 @@ export default function Home() {
                   <li>Processed 1000+ content requests</li>
                 </ul>
               </div>
+            </div>
+            <div className="mt-4 flex items-center gap-4">
+              <a href="#" className="underline underline-offset-4" aria-label="Live demo coming soon">Live Demo (soon)</a>
+              <a href="https://github.com/Mercynow21/milli_portfolio" target="_blank" rel="noreferrer" className="underline underline-offset-4">GitHub Repo</a>
             </div>
           </article>
 
