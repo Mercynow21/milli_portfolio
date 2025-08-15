@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test:e2e": "playwright test --reporter=line",
-    "test:e2e:headed": "playwright test --headed",
-    "postinstall": "npx -y playwright install --with-deps"
+    "test:e2e:headed": "playwright test --headed"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.55.0",
