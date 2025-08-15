@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 export default function Home() {
   return (
     <div className="py-10">
@@ -133,38 +135,13 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="py-12 border-t border-black/5 dark:border-white/10">
         <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
-        <p className="mt-4 text-black/80 dark:text-white/80">
-          Ready to contribute to your team’s AI initiatives! Reach out at
-          {" "}
-          <a
-            href="mailto:mercyabdi7@gmail.com"
-            className="underline underline-offset-4"
-          >
-            mercyabdi7@gmail.com
-          </a>
-          {" "}
-          or connect on
-          {" "}
-          <a
-            href="https://www.linkedin.com/in/mehiret-abdissa21"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            LinkedIn
-          </a>
-          {" "}or see my
-          {" "}
-          <a
-            href="https://github.com/Mercynow21"
-            target="_blank"
-            rel="noreferrer"
-            className="underline underline-offset-4"
-          >
-            GitHub
-          </a>
-          .
-        </p>
+        <p className="mt-4 text-black/80 dark:text-white/80">Ready to contribute to your team’s AI initiatives. Reach me at <a href="mailto:mercyabdi7@gmail.com" className="underline underline-offset-4">mercyabdi7@gmail.com</a>. Connect on <a href="https://www.linkedin.com/in/mehiret-abdissa21" target="_blank" rel="noreferrer" className="underline underline-offset-4">LinkedIn</a> or see my <a href="https://github.com/Mercynow21" target="_blank" rel="noreferrer" className="underline underline-offset-4">GitHub</a>.</p>
+        <div className="mt-4">
+          <p className="text-sm text-black/60 dark:text-white/60">Prefer leaving a message here?</p>
+          <div className="mt-2">
+            <ContactForm />
+          </div>
+        </div>
       </section>
     </div>
   );
