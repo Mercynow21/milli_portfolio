@@ -17,6 +17,9 @@ export default function Navbar() {
           <a href="#projects" className="hover:underline underline-offset-4">
             Projects
           </a>
+          <a href="/resume" className="hover:underline underline-offset-4">
+            Resume
+          </a>
           <a
             href="#contact"
             className="inline-flex items-center rounded-full bg-foreground text-background px-3 py-1.5 text-xs font-medium hover:opacity-90"
