@@ -1,4 +1,5 @@
 import ContactForm from "@/components/ContactForm";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -81,7 +82,14 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-4">
-              <img src="/projects/content-assistant.svg" alt="Screenshot placeholder of the AI Content Assistant UI" className="w-full max-w-3xl rounded-md border border-black/5 dark:border-white/10" />
+              <Image
+                src="/window.svg"
+                alt="Screenshot placeholder of the AI Content Assistant UI"
+                width={1200}
+                height={630}
+                className="w-full max-w-3xl h-auto rounded-md border border-black/5 dark:border-white/10"
+                priority
+              />
             </div>
             <p className="mt-4 text-black/80 dark:text-white/80">
               A smart content generation and optimization tool that helps content creators streamline their workflow.
