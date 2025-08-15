@@ -5,7 +5,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-black/5 dark:border-white/10">
       <nav className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
         <Link href="#hero" className="font-semibold tracking-tight">
-          Mercy Abdissa
+          Mehiret Abdissa
         </Link>
         <div className="flex items-center gap-6 text-sm">
           <a href="#about" className="hover:underline underline-offset-4">

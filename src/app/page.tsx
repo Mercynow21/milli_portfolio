@@ -137,21 +137,31 @@ export default function Home() {
           Ready to contribute to your team’s AI initiatives! Reach out at
           {" "}
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:mercyabdi7@gmail.com"
             className="underline underline-offset-4"
           >
-            your.email@example.com
+            mercyabdi7@gmail.com
           </a>
           {" "}
           or connect on
           {" "}
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/mehiret-abdissa21"
             target="_blank"
             rel="noreferrer"
             className="underline underline-offset-4"
           >
             LinkedIn
+          </a>
+          {" "}or see my
+          {" "}
+          <a
+            href="https://github.com/Mercynow21"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-4"
+          >
+            GitHub
           </a>
           .
         </p>

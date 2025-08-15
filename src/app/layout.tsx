@@ -15,21 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mercy Abdissa — Junior AI Developer & Prompt Engineer",
+  title: "Mehiret Abdissa — Junior AI Developer & Prompt Engineer",
   description:
     "Entry-level AI developer focused on prompt engineering, LLM integration, and human-centered AI applications.",
   metadataBase: new URL("https://milli-portfolio.vercel.app"),
   openGraph: {
-    title: "Mercy Abdissa — Junior AI Developer & Prompt Engineer",
+    title: "Mehiret Abdissa — Junior AI Developer & Prompt Engineer",
     description:
       "Entry-level AI developer focused on prompt engineering, LLM integration, and human-centered AI applications.",
     url: "https://milli-portfolio.vercel.app",
-    siteName: "Mercy Abdissa Portfolio",
+    siteName: "Mehiret Abdissa Portfolio",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mercy Abdissa — Junior AI Developer & Prompt Engineer",
+    title: "Mehiret Abdissa — Junior AI Developer & Prompt Engineer",
     description:
       "Entry-level AI developer focused on prompt engineering, LLM integration, and human-centered AI applications.",
   },
