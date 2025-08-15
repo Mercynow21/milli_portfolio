@@ -128,7 +128,133 @@ export default function Home() {
             </div>
           </article>
 
-          
+          {/* AI-Powered Portfolio Generator */}
+          <article className="rounded-lg border border-black/5 dark:border-white/10 p-6">
+            <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div>
+                <h3 className="text-xl font-semibold">AI-Powered Portfolio Generator</h3>
+                <p className="text-sm text-black/60 dark:text-white/60">Build professional portfolios in minutes</p>
+              </div>
+            </div>
+            <p className="mt-4 text-black/80 dark:text-white/80">
+              Created a lightweight web app that generates personalized About Me and Skills sections using ChatGPT
+              prompt engineering. Leveraged Cursor for AI-assisted coding, Python scripts for text processing, and
+              deployed via Vercel with GitHub for version control.
+            </p>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-medium">Tools</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>Cursor, ChatGPT</li>
+                  <li>Python</li>
+                  <li>Vercel, GitHub</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium">Implementation</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>AI-assisted scaffolding and iteration in Cursor</li>
+                  <li>Structured RTFCEI prompts to guide content</li>
+                  <li>Clean UI with Copy + Markdown download</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium">Outcome</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>60% faster content creation vs manual writing</li>
+                  <li>Live, interview-ready demo</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 flex items-center gap-4">
+              <a href="https://milli-portfolio-5s47.vercel.app" target="_blank" rel="noreferrer" className="underline underline-offset-4">Live Demo</a>
+              <a href="https://github.com/Mercynow21" target="_blank" rel="noreferrer" className="underline underline-offset-4">GitHub</a>
+            </div>
+          </article>
+
+          {/* AI Chatbot Knowledge Assistant */}
+          <article className="rounded-lg border border-black/5 dark:border-white/10 p-6">
+            <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div>
+                <h3 className="text-xl font-semibold">AI Chatbot Knowledge Assistant</h3>
+                <p className="text-sm text-black/60 dark:text-white/60">Get instant answers from your own data</p>
+              </div>
+            </div>
+            <p className="mt-4 text-black/80 dark:text-white/80">
+              Built a chatbot that retrieves and summarizes custom knowledge base content using OpenAI and Supabase,
+              with a responsive Next.js UI and Vercel deployment.
+            </p>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-medium">Tools</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>OpenAI API</li>
+                  <li>Supabase</li>
+                  <li>Next.js, Vercel, GitHub</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium">Implementation</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>Vector search over documents</li>
+                  <li>Prompt design for retrieval + summarization</li>
+                  <li>Deployed on Vercel</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium">Outcome</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>50% reduction in research time for testers</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 flex items-center gap-4">
+              <a href="#" className="underline underline-offset-4">Live Demo</a>
+              <a href="#" className="underline underline-offset-4">GitHub Repo</a>
+            </div>
+          </article>
+
+          {/* AI Blog Post Generator */}
+          <article className="rounded-lg border border-black/5 dark:border-white/10 p-6">
+            <div className="flex items-start justify-between gap-4 flex-wrap">
+              <div>
+                <h3 className="text-xl font-semibold">AI Blog Post Generator</h3>
+                <p className="text-sm text-black/60 dark:text-white/60">Turn topics into publish‑ready articles</p>
+              </div>
+            </div>
+            <p className="mt-4 text-black/80 dark:text-white/80">
+              Generator that creates SEO‑friendly drafts with prompt engineering and a Python back end; styled with
+              Tailwind and deployed on Vercel.
+            </p>
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <h4 className="font-medium">Tools</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>Python, ChatGPT API</li>
+                  <li>TailwindCSS</li>
+                  <li>Vercel, GitHub Copilot</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium">Implementation</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>Few‑shot prompts for structure + tone</li>
+                  <li>Server route to orchestrate generation</li>
+                  <li>Markdown export</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium">Outcome</h4>
+                <ul className="mt-2 space-y-1 list-disc list-inside text-sm">
+                  <li>From ~3 hours to &lt;15 minutes per article</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-4 flex items-center gap-4">
+              <a href="#" className="underline underline-offset-4">Live Demo</a>
+              <a href="#" className="underline underline-offset-4">GitHub Repo</a>
+            </div>
+          </article>
         </div>
       </section>
 
