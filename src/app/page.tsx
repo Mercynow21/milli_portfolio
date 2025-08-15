@@ -116,19 +116,7 @@ export default function Home() {
             </div>
           </article>
 
-          <article className="rounded-lg border border-dashed border-black/10 dark:border-white/15 p-6">
-            <h3 className="text-lg font-medium">[Future Project]</h3>
-            <p className="mt-2 text-black/70 dark:text-white/70">
-              Coming Soon: An exciting AI project focusing on natural language processing and user interaction.
-            </p>
-          </article>
-
-          <article className="rounded-lg border border-dashed border-black/10 dark:border-white/15 p-6">
-            <h3 className="text-lg font-medium">[Future Project]</h3>
-            <p className="mt-2 text-black/70 dark:text-white/70">
-              Coming Soon: A collaborative AI tool that demonstrates advanced prompt engineering techniques.
-            </p>
-          </article>
+          
         </div>
       </section>
 
