@@ -132,7 +132,15 @@ export default function Home() {
           <article className="rounded-lg border border-black/5 dark:border-white/10 p-6">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <h3 className="text-xl font-semibold">AI-Powered Portfolio Generator</h3>
+                <a
+                  href="https://milli-portfolio-5s47.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-xl font-semibold underline underline-offset-4 hover:opacity-90"
+                  aria-label="Open live demo: AI-Powered Portfolio Generator"
+                >
+                  AI-Powered Portfolio Generator
+                </a>
                 <p className="text-sm text-black/60 dark:text-white/60">Build professional portfolios in minutes</p>
               </div>
             </div>
@@ -176,7 +184,13 @@ export default function Home() {
           <article className="rounded-lg border border-black/5 dark:border-white/10 p-6">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <h3 className="text-xl font-semibold">AI Chatbot Knowledge Assistant</h3>
+                <a
+                  href="#"
+                  className="text-xl font-semibold underline underline-offset-4"
+                  aria-label="Live demo coming soon: AI Chatbot Knowledge Assistant"
+                >
+                  AI Chatbot Knowledge Assistant
+                </a>
                 <p className="text-sm text-black/60 dark:text-white/60">Get instant answers from your own data</p>
               </div>
             </div>
@@ -218,7 +232,13 @@ export default function Home() {
           <article className="rounded-lg border border-black/5 dark:border-white/10 p-6">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div>
-                <h3 className="text-xl font-semibold">AI Blog Post Generator</h3>
+                <a
+                  href="#"
+                  className="text-xl font-semibold underline underline-offset-4"
+                  aria-label="Live demo coming soon: AI Blog Post Generator"
+                >
+                  AI Blog Post Generator
+                </a>
                 <p className="text-sm text-black/60 dark:text-white/60">Turn topics into publish‑ready articles</p>
               </div>
             </div>
