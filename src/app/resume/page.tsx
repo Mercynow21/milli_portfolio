@@ -1,3 +1,4 @@
+import PrintButton from "@/components/PrintButton";
 export const metadata = {
   title: "Resume — Mehiret Abdissa",
   description: "Junior AI Developer & Prompt Engineer — Resume",
@@ -16,6 +17,9 @@ export default function ResumePage() {
           {" • "}
           <a href="https://www.linkedin.com/in/mehiret-abdissa21" target="_blank" rel="noreferrer" className="underline underline-offset-4">linkedin.com/in/mehiret-abdissa21</a>
         </p>
+        <div className="mt-4 print:hidden">
+          <PrintButton />
+        </div>
       </header>
 
       <section className="mt-10">

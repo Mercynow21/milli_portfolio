@@ -24,3 +24,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Print styles for resume */
+@media print {
+  header, footer, nav { display: none !important; }
+  main { padding: 0 !important; }
+  a { color: black; text-decoration: none; }
+}
