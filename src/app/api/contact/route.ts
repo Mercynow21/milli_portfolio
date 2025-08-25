@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createClient } from "@supabase/supabase-js";
+import { Resend } from "resend";
 
 export async function POST(request: Request) {
   try {
@@ -9,21 +9,35 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    const resendApiKey = process.env.RESEND_API_KEY;
+    const toEmail = process.env.CONTACT_TO_EMAIL;
+    const fromEmail = process.env.CONTACT_FROM_EMAIL || "Portfolio <onboarding@resend.dev>";
 
-    if (!supabaseUrl || !supabaseKey) {
-      return NextResponse.json({ error: "Server not configured" }, { status: 500 });
+    if (!resendApiKey || !toEmail) {
+      return NextResponse.json({ error: "Email not configured" }, { status: 500 });
     }
 
-    const supabase = createClient(supabaseUrl, supabaseKey);
+    const resend = new Resend(resendApiKey);
 
-    const { error } = await supabase
-      .from("contacts")
-      .insert({ name, email, message, source: "portfolio" });
+    const subject = `New portfolio contact from ${name}`;
+    const html = `
+      <div>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong></p>
+        <p style="white-space: pre-wrap;">${message}</p>
+      </div>
+    `;
+
+    const { error } = await resend.emails.send({
+      from: fromEmail,
+      to: [toEmail],
+      subject,
+      html,
+    });
 
     if (error) {
-      return NextResponse.json({ error: error.message }, { status: 500 });
+      return NextResponse.json({ error: error.message || "Failed to send email" }, { status: 500 });
     }
 
     return NextResponse.json({ ok: true });

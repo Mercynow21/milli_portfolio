@@ -21,3 +21,13 @@ Fonts are handled via `next/font` and Geist.
 3. Framework preset: Next.js (auto)
 4. If this is in a monorepo, set Root Directory to `portfolio`
 5. Click Deploy
+
+## Contact Form Setup (Email via Resend)
+
+Set these environment variables (Vercel → Project → Settings → Environment Variables):
+
+- `RESEND_API_KEY` – from your Resend account
+- `CONTACT_TO_EMAIL` – your inbox (e.g., `you@example.com`)
+- `CONTACT_FROM_EMAIL` – optional, defaults to `Portfolio <onboarding@resend.dev>`
+
+Then redeploy. The form at `#contact` will send you an email instead of writing to a database.

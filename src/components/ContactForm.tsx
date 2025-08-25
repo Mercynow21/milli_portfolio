@@ -9,6 +9,10 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
 
+  const mailtoHref = `mailto:mercyabdi7@gmail.com?subject=${encodeURIComponent(
+    `Portfolio contact from ${name || ""}`
+  )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("loading");
@@ -71,7 +75,16 @@ export default function ContactForm() {
           <span className="text-green-600">Message sent!</span>
         )}
         {status === "error" && (
-          <span className="text-red-600">{error || "Failed to send"}</span>
+          <div className="flex items-center gap-3">
+            <span className="text-red-600">{error || "Failed to send"}</span>
+            <a
+              href={mailtoHref}
+              className="inline-flex items-center rounded-full border border-black/10 dark:border-white/20 px-4 py-1.5 text-sm hover:opacity-80"
+              aria-label="Email me instead"
+            >
+              Email me instead
+            </a>
+          </div>
         )}
       </div>
     </form>
